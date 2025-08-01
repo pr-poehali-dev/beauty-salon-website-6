@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -106,11 +107,15 @@ const Index = () => {
             <div className="text-2xl font-bold text-primary">BeautySpace</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
-              <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
+              <Link to="/services" className="hover:text-primary transition-colors">Услуги</Link>
               <a href="#masters" className="hover:text-primary transition-colors">Мастера</a>
               <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
               <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
               <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
+              <Link to="/cart" className="hover:text-primary transition-colors flex items-center gap-2">
+                <Icon name="ShoppingCart" size={20} />
+                Корзина
+              </Link>
             </div>
             <Button onClick={() => setIsBookingOpen(true)} className="bg-primary hover:bg-primary/90">
               Записаться
