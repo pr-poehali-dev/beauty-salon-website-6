@@ -105,13 +105,14 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold text-primary">BeautySpace</div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#home" className="hover:text-primary transition-colors">Главная</a>
+            <div className="hidden md:flex space-x-6">
+              <Link to="/" className="hover:text-primary transition-colors">Главная</Link>
               <Link to="/services" className="hover:text-primary transition-colors">Услуги</Link>
-              <a href="#masters" className="hover:text-primary transition-colors">Мастера</a>
-              <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
-              <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
-              <a href="#contacts" className="hover:text-primary transition-colors">Контакты</a>
+              <Link to="/about" className="hover:text-primary transition-colors">О нас</Link>
+              <Link to="/team" className="hover:text-primary transition-colors">Команда</Link>
+              <Link to="/gallery" className="hover:text-primary transition-colors">Галерея</Link>
+              <Link to="/blog" className="hover:text-primary transition-colors">Блог</Link>
+              <Link to="/contacts" className="hover:text-primary transition-colors">Контакты</Link>
               <Link to="/cart" className="hover:text-primary transition-colors flex items-center gap-2">
                 <Icon name="ShoppingCart" size={20} />
                 Корзина
